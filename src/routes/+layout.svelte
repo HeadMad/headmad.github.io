@@ -4,9 +4,9 @@
 </script>
 
 <nav>
-  <a href="/">Home</a> |
-  <a href="{base}/faq">FAQ</a>|
-  <a href="{base}/contacts">Contacts</a>
+  <a href="/index.html">Home</a> |
+  <a href="faq.html">FAQ</a>|
+  <a href="contacts.html">Contacts</a>
 </nav>
 
 {@render children()}
