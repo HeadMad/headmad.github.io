@@ -1,6 +1,7 @@
 <script>
   import {base} from '$app/paths';
    let {children} = $props();
+   let arr = ['take', 'own', 'me']
 </script>
 
 <nav>
