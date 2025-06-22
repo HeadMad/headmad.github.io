@@ -1,3 +1,1 @@
-<h1>HeadMad wellcom page!</h1>
-<p>...</p>
-<p>...</p>
+<h1>Home</h1>
