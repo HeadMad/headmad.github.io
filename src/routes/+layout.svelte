@@ -3,10 +3,10 @@
    let {children} = $props();
 </script>
 
-<!-- <nav>
-  <a href="/index.html">Home</a> |
-  <a href="faq.html">FAQ</a>|
-  <a href="contacts.html">Contacts</a>
-</nav> -->
+<nav>
+  <a href="/">Home</a> |
+  <a href="/faq">FAQ</a>|
+  <a href="/contacts">Contacts</a>
+</nav>
 
 {@render children()}
