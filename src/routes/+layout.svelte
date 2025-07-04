@@ -7,7 +7,9 @@
 <nav>
   <a href="/">Home</a> |
   <a href="/faq">FAQ</a> |
-  <a href="/contacts">Contacts</a>
+  <a href="/contacts">Contacts</a> |
+  <a href="/svelte-coordinator">Multi Range</a>
+
 </nav>
 
 {@render children()}
