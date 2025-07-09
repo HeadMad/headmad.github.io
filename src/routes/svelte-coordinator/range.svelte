@@ -33,30 +33,38 @@
 </script>
 
 <div
+class="range"
   {@attach coordinator(handlers)}
   style="width: {width}"
 >
+<div class="track"></div>
+<div class="active-track" style="left: {scale(Math.min(...value), [min, max], [0, 100])}%; right: {100 -scale(Math.max(...value), [min, max], [0, 100])}%"></div>
+
 {#each value as val, i}
   <i class="point" class:active={i === active} style="left: {scale(val, [min, max], [0, 100])}%"></i>
 {/each}
 </div>
 
 <style>
-  div {
+  .range {
     position: relative;
     height: 20px;
     margin: 40px;
   }
 
-  div::before {
-    content: "";
+  .track, .active-track {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 50%;
     height: 4px;
-    width: 100%;
     border-radius: 2px;
     transform: translateY(-50%);
-    background-color: #989899;
+    background-color: #dcdcdc;
+  }
+
+  .active-track {
+    background-color: #fe0a63;
   }
 
   .point {

@@ -1,6 +1,6 @@
 <script>
   import Progress from './range.svelte'
-  let value = $state([10, 20]);
+  let value = $state([10, 80]);
 </script>
 <br><br>
   Value: {value}
