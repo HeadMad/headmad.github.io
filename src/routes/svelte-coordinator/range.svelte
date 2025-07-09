@@ -49,7 +49,8 @@ class="range"
   .range {
     position: relative;
     height: 20px;
-    margin: 40px;
+    padding: 10px 0;
+    margin: 20px;
   }
 
   .track, .active-track {
@@ -69,14 +70,14 @@ class="range"
 
   .point {
     position: absolute;
-    top: 0;
+    top: 50%;
     box-sizing: border-box;
     width: var(--size, 20px);
     height: var(--size, 20px);
     border-radius: 4px;
     border: 2px solid #fff;
     background-color: #e0e0e0;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
 
